@@ -5,9 +5,15 @@ node_modules/
 
 # Expo
 .expo/
+.expo-shared
 dist/
 web-build/
 expo-env.d.ts
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
 
 # Native
 *.orig.*
@@ -34,3 +40,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# iOS / Android
+ios
+android
+
+# macOS
+.DS_Store
