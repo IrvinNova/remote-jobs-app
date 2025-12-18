@@ -39,7 +39,7 @@ npm install -g expo-cli
 ▶️ Instalación y ejecución
 1️⃣ Clonar el repositorio
 
-git clone https://github.com/tu-usuario/remote-jobs-app.git
+git clone https://github.com/IrvinNova/remote-jobs-app
 cd remote-jobs-app
 
 2️⃣ Instalar dependencias
