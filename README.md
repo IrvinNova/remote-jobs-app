@@ -106,5 +106,42 @@ Esto permite que los favoritos se mantengan incluso después de cerrar la app.
 - Tests unitarios
 - Publicación en stores
 
+## 🧠 Decisiones técnicas
+
+- **Expo + React Native**: rapidez de desarrollo y compatibilidad multiplataforma
+- **TypeScript**: tipado fuerte para reducir errores
+- **Zustand**: manejo de estado simple y escalable
+- **AsyncStorage + persist**: persistencia local de favoritos
+- **FlatList + Infinite Scroll**: rendimiento con listas largas
+- **Remotive API**: fuente pública y sin autenticación
+
+---
+
+## ⚙️ Arquitectura
+
+- `screens/`: vistas principales
+- `components/`: componentes reutilizables
+- `store/`: estado global (Zustand)
+- `api/`: configuración de llamadas HTTP
+- `types/`: contratos de datos
+
+---
+
+## 🚧 Limitaciones conocidas
+
+- La API de Remotive no soporta paginación real
+- Los filtros se aplican del lado del cliente
+- No hay autenticación de usuario
+
+---
+
+## 🛠 Mejoras futuras
+
+- Cacheo inteligente
+- Tests unitarios
+- Dark mode
+- Guardar filtros preferidos
+- Paginación real
+
 👨‍💻 Autor
 Desarrollado por Irvin Nova

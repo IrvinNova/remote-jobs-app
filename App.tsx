@@ -1,8 +1,9 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { JobsListScreen } from './src/screens/JobsListScreen';
-import { JobDetailScreen } from './src/screens/JobDetailScreen';
+import JobDetailScreen  from './src/screens/JobDetailScreen';
 import { FavoritesScreen } from './src/screens/FavoritesScreen';
+import { Job } from './src/types/job'
 
 import { LogBox } from 'react-native';
 
@@ -17,7 +18,7 @@ export type RootStackParamList = {
   Favorites: undefined;
 };
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (

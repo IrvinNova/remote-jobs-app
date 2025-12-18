@@ -9,18 +9,17 @@ import {
     Dimensions,
 } from 'react-native';
 import { icons } from '../constants/icons';
-import { RouteProp } from '@react-navigation/native';
 import RenderHTML from 'react-native-render-html';
 import * as WebBrowser from 'expo-web-browser';
 import { useJobsStore } from '../store/jobsStore';
 import { RootStackParamList } from '../../App';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 
-type Props = {
-    route: RouteProp<RootStackParamList, 'JobDetail'>;
-};
+type Props = NativeStackScreenProps<RootStackParamList, 'JobDetail'>;
 
-export const JobDetailScreen = ({ route }: Props) => {
+
+export default function JobDetailScreen({ route }: Props) {
     const { job } = route.params;
     const { favorites, toggleFavorite } = useJobsStore();
     const isFav = favorites.includes(job.id);
